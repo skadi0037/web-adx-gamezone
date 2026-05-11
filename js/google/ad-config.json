@@ -1,42 +1,30 @@
 {
   "global": {
-    "networkCode": "23332244437",
+    "networkCode": "23342675536",
     "adEnabled": 1
   },
   "interstitial": {
     "enabled": 1,
-    "adUnit": "/23332244437/musikharmoni.my.id-OpenScreen"
+    "adUnit": "/23342675536/musikharmoni.my.id-OpenScreen"
   },
   "pages": {
     "index.html": [
       {
-        "adUnit": "/23332244437/home-top-banner",
-        "sizes": [[728, 350], [320, 50]],
-        "sizeMapping": [
-          { "viewport": [768, 0], "sizes": [[728, 350]] },
-          { "viewport": [0, 0], "sizes": [[320, 50]] }
-        ],
+        "adUnit": "/23342675536/home-top-banner",
+        "sizes": [[728, 90], [300, 250], [336, 280]],
         "selector": ".ad-placeholder-top",
         "enabled": 1
       },
       {
-        "adUnit": "/23332244437/home-category-inline",
-        "sizes": [[728, 350], [300, 250]],
-        "sizeMapping": [
-          { "viewport": [768, 0], "sizes": [[728, 350]] },
-          { "viewport": [0, 0], "sizes": [[300, 250]] }
-        ],
+        "adUnit": "/23342675536/home-category-inline",
+        "sizes": [[728, 90], [300, 250], [336, 280]],
         "selector": ".ad-placeholder-category",
         "categoryPosition": 0,
         "enabled": 1
       },
       {
-        "adUnit": "/23332244437/home-list-inline",
-        "sizes": [[728, 350], [300, 250]],
-        "sizeMapping": [
-          { "viewport": [768, 0], "sizes": [[728, 350]] },
-          { "viewport": [0, 0], "sizes": [[300, 250]] }
-        ],
+        "adUnit": "/23342675536/home-list-inline",
+        "sizes": [[728, 90], [300, 250], [336, 280]],
         "selector": ".ad-placeholder-list",
         "listPosition": 0,
         "enabled": 1
@@ -44,66 +32,42 @@
     ],
     "play.html": [
       {
-        "adUnit": "/23332244437/play-top-banner",
-        "sizes": [[728, 350], [320, 50]],
-        "sizeMapping": [
-          { "viewport": [768, 0], "sizes": [[728, 350]] },
-          { "viewport": [0, 0], "sizes": [[320, 50]] }
-        ],
+        "adUnit": "/23342675536/play-top-banner",
+        "sizes": [[728, 90], [300, 250], [336, 280]],
         "selector": ".ad-placeholder-top",
         "enabled": 1
       },
       {
-        "adUnit": "/23332244437/play-bottom-banner",
-        "sizes": [[728, 350], [300, 250]],
-        "sizeMapping": [
-          { "viewport": [768, 0], "sizes": [[728, 350]] },
-          { "viewport": [0, 0], "sizes": [[300, 250]] }
-        ],
+        "adUnit": "/23342675536/play-bottom-banner",
+        "sizes": [[728, 90], [300, 250], [336, 280]],
         "selector": ".ad-placeholder-bottom",
         "enabled": 1
       }
     ],
     "games.html": [
       {
-        "adUnit": "/23332244437/detail-top-banner",
-        "sizes": [[728, 350], [320, 50]],
-        "sizeMapping": [
-          { "viewport": [768, 0], "sizes": [[728, 350]] },
-          { "viewport": [0, 0], "sizes": [[320, 50]] }
-        ],
+        "adUnit": "/23342675536/detail-top-banner",
+        "sizes": [[728, 90], [300, 250], [336, 280]],
         "selector": ".ad-placeholder-top",
         "enabled": 1
       },
       {
-        "adUnit": "/23332244437/detail-bottom-banner",
-        "sizes": [[728, 350], [300, 250]],
-        "sizeMapping": [
-          { "viewport": [768, 0], "sizes": [[728, 350]] },
-          { "viewport": [0, 0], "sizes": [[300, 250]] }
-        ],
+        "adUnit": "/23342675536/detail-bottom-banner",
+        "sizes": [[728, 90], [300, 250], [336, 280]],
         "selector": ".ad-placeholder-bottom",
         "enabled": 1
       }
     ],
     "types.html": [
       {
-        "adUnit": "/23332244437/list-top-banner",
-        "sizes": [[728, 350], [320, 50]],
-        "sizeMapping": [
-          { "viewport": [768, 0], "sizes": [[728, 350]] },
-          { "viewport": [0, 0], "sizes": [[320, 50]] }
-        ],
+        "adUnit": "/23342675536/list-top-banner",
+        "sizes": [[728, 90], [300, 250], [336, 280]],
         "selector": ".ad-placeholder-top",
         "enabled": 1
       },
       {
-        "adUnit": "/23332244437/list-inline",
-        "sizes": [[300, 350], [336, 280]],
-        "sizeMapping": [
-          { "viewport": [768, 0], "sizes": [[336, 350]] },
-          { "viewport": [0, 0], "sizes": [[300, 350]] }
-        ],
+        "adUnit": "/23342675536/list-inline",
+        "sizes": [[300, 250], [336, 280]],
         "selector": ".ad-placeholder-list",
         "listPosition": 0,
         "enabled": 1
