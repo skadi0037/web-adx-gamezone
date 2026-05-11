@@ -50,12 +50,10 @@
         return;
       }
 
-      // Push setup commands (executed when GPT script loads)
       googletag.cmd.push(function () {
         googletag.setConfig({ singleRequest: true, collapseDiv: 'ON_NO_FILL' });
         googletag.enableServices();
 
-        // Interstitial / OpenScreen
         if (
           window.AD_CONFIG.interstitial &&
           window.AD_CONFIG.interstitial.enabled !== 0
@@ -71,7 +69,6 @@
         }
       });
 
-      // Global slot render listener (once)
       googletag.cmd.push(function () {
         googletag.pubads().addEventListener("slotRenderEnded", function (event) {
           var slotId = event.slot.getSlotElementId();
@@ -90,7 +87,6 @@
         });
       });
 
-      // Load GPT library
       var script = document.createElement("script");
       script.async = true;
       script.src = "https://securepubads.g.doubleclick.net/tag/js/gpt.js";
@@ -163,7 +159,6 @@
           return;
         }
 
-        // Responsive size mapping
         if (ad.sizeMapping && ad.sizeMapping.length > 0) {
           var mapping = googletag.sizeMapping();
           for (var i = 0; i < ad.sizeMapping.length; i++) {
