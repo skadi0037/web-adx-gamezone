@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms and Conditions | Free Game</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/showLoading.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="icon" href="../images/favicon.png">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .agreement-container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: var(--header-bg);
+      padding: 40px 50px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
+      color: var(--nav-text);
+    }
+
+    [data-theme="dark"] .agreement-container {
+      background: #1a1b28;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .agreement-container h1,
+    .agreement-container h2,
+    .agreement-container h3 {
+      color: var(--logo-color);
+      margin-top: 1.8em;
+    }
+
+    .agreement-container h1 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+
+    .agreement-container h2 {
+      margin-top: 1.5em;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 0.3em;
+    }
+
+    .agreement-container h3 {
+      margin-top: 1em;
+    }
+
+    .agreement-container p,
+    .agreement-container li {
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    .agreement-container ul {
+      margin-left: 20px;
+    }
+
+    .agreement-container ol {
+      margin-left: 25px;
+    }
+
+    .chapter {
+      margin-top: 2em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app-container">
+    <div class="main-wrapper">
+      <header class="top-bar">
+        <div class="header-content">
+          <div class="header-left">
+            <a href="../index.html" class="logo">
+              <div class="logo-icon"></div>
+              <span class="logo-text">Free Game</span>
+            </a>
+          </div>
+          <div class="nav-container">
+            <div class="nav-arrow left-arrow"><i class="fas fa-chevron-left"></i></div>
+            <nav class="main-nav">
+              <a href="../index.html" class="nav-item">Home</a>
+            </nav>
+            <div class="nav-arrow right-arrow"><i class="fas fa-chevron-right"></i></div>
+          </div>
+          <div class="header-right">
+            <div class="search-container">
+              <i class="fas fa-search search-icon"></i>
+              <input type="text" id="searchInput" class="search-input" placeholder="Search game">
+              <button id="searchBtn" style="display:none;"></button>
+            </div>
+                        <div class="theme-select-wrapper">
+                          <div class="theme-select-trigger">Dark</div>
+                          <div class="theme-options">
+                            <div class="theme-option" data-value="light">Light</div>
+                            <div class="theme-option" data-value="dark">Dark</div>
+                            <div class="theme-option" data-value="pink">Pink</div>
+                          </div>
+                        </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="content-area">
+        <div class="agreement-container">
+          <h1>Terms and Conditions</h1>
+          <p><strong>Effective Date:</strong> May 23, 2024</p>
+
+          <section class="chapter">
+            <h2>Chapter 1: General Provision</h2>
+
+            <h3>Article 1 (Purpose)</h3>
+            <p>These Terms and Conditions regulate rights, obligations, and responsibilities of the Company and users
+              when
+              the user uses internet services provided by the Company.</p>
+
+            <h3>Article 2 (Effect or Change of Terms and Conditions)</h3>
+            <ol>
+              <li>The Terms and Conditions take effect when the Company announces them on the website or by email.</li>
+              <li>The Company may change the Terms and Conditions without prior notice when there is an inevitable
+                reason.
+                In such cases, the Company will announce the changes through the service.</li>
+              <li>Users can withdraw membership if they do not agree to the changed Terms and Conditions. If a user does
+                not request withdrawal within 10 days from the effective date of the changes, it is considered that the
+                user agrees to the new terms.</li>
+            </ol>
+
+            <h3>Article 3 (Rules besides the Terms and Conditions)</h3>
+            <p>Matters not specified in these Terms and Conditions will follow relevant laws such as the
+              Telecommunications
+              Act and the Information and Communications Network Act.</p>
+
+            <h3>Article 4 (Definition of Terminology)</h3>
+            <ul>
+              <li><strong>Member:</strong> A person who has made a utilization contract with the Company and is assigned
+                an ID.</li>
+              <li><strong>ID:</strong> A unique identifier composed of characters and/or numbers used to identify users.
+              </li>
+              <li><strong>Password:</strong> A secret combination used to verify the member’s identity and protect
+                personal information.</li>
+              <li><strong>Nickname:</strong> A name chosen by the member to represent themselves within the service.</li>
+              <li><strong>Suspension:</strong> Temporary restriction of a member’s service usage.</li>
+              <li><strong>Cancellation:</strong> Termination of the service contract by the Company or member.</li>
+              <li><strong>Point:</strong> A score granted to members that can increase or decrease according to their
+                participation in the service.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-links">
+          <a href="./users.html">Terms of Service</a>
+          <a href="./privacy.html">Privacy Policy</a>
+        </div>
+        <p>&copy; 2024 Free Game. All rights reserved.</p>
+      </footer>
+    </div>
+  </div>
+
+  <div class="top_lea">
+    <img src="../images/goTop.png" alt="Go Top" />
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../js/switchBg.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/index.js"></script>
+</body>
+
+</html>

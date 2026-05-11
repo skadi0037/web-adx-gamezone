@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Game</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/playWait.css">
+    <link rel="stylesheet" href="./css/showLoading.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="icon" href="./images/favicon.png">
+    <style>
+        ins.adsbygoogle[data-ad-status="unfilled"] {
+            display: none !important;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/google/ad-manager.js"></script>
+    <script>window._xy_cms = { catalog_id: '785172886196293', content_id: '785172889124933' };</script>
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="main-wrapper">
+            <header class="top-bar">
+                <div class="header-content">
+                    <div class="header-left">
+                        <a href="./index.html" class="logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text">Free Game</span>
+                        </a>
+                    </div>
+                    <div class="nav-container">
+                        <div class="nav-arrow left-arrow"><i class="fas fa-chevron-left"></i></div>
+                        <nav class="main-nav">
+                            <a href="./index.html" class="nav-item">Home</a>
+                        </nav>
+                        <div class="nav-arrow right-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="header-right">
+                        <div class="search-container">
+                            <i class="fas fa-search search-icon"></i>
+                            <input type="text" id="searchInput" class="search-input" placeholder="Search game">
+                            <button id="searchBtn" style="display:none;"></button>
+                        </div>
+                        <div class="theme-select-wrapper">
+                            <div class="theme-select-trigger">Dark</div>
+                            <div class="theme-options">
+                                <div class="theme-option" data-value="light">Light</div>
+                                <div class="theme-option" data-value="dark">Dark</div>
+                                <div class="theme-option" data-value="pink">Pink</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-category-nav">
+                    <a href="./index.html" class="mobile-nav-item">Home</a>
+                </div>
+            </header>
+
+            <div class="content-area">
+                <div class="play-container">
+                    <!-- Top Ad Placeholder -->
+                    <div class="ad-placeholder-top">
+                        <!-- 动态加载广告 -->
+                    </div>
+                    <div class="game-card">
+                        <div class="game-icon-wrapper">
+                            <img class="game-icon" src="./images/page.png" alt="" referrerpolicy="no-referrer">
+                        </div>
+                        <h2 class="game-title">Loading...</h2>
+                        <p class="game-status">Preparing your game...</p>
+                        <a href="javascript:;" class="play-btn">
+                            <div class="btn-content">
+                                <span class="btn-text">loading...</span>
+                            </div>
+                            <div class="btn-progress"></div>
+                        </a>
+                    </div>
+
+                    <div class="ad-placeholder-bottom">
+                        <!-- 动态加载广告 -->
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-links">
+                    <a href="./agreement/users.html">Terms of Service</a>
+                    <a href="./agreement/privacy.html">Privacy Policy</a>
+                </div>
+                <p>&copy; 2026 Free Game. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./js/common.js"></script>
+    <script src="./js/playWait.js"></script>
+    <script src="./js/switchBg.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZDPXP0C33"></script>
+    <script src="./js/google/ga.js"></script>
+    <script src="./js/google/openscreen.js"></script>
+</body>
+
+</html>

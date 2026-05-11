@@ -1,0 +1,243 @@
+/* 侧边栏页面跳转 */
+.sidebar {
+  width: 100px;
+  background-color: var(--sidebar-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  position: fixed;
+  height: 100vh;
+  z-index: 1000;
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  transition: width 0.3s;
+}
+
+.sidebar.collapsed {
+  width: 0;
+  overflow: hidden;
+  padding-top: 0;
+  border-right: none;
+}
+
+.sidebar-item {
+  width: 80px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  transition: all 0.2s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.sidebar-item:hover,
+.sidebar-item.active {
+  background-color: var(--hover-color);
+  color: var(--accent-color);
+}
+
+/* Main Content Area */
+.main-wrapper {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  transition: margin-left 0.3s;
+}
+
+.sidebar.collapsed + .main-wrapper {
+  margin-left: 0;
+}
+
+@media (max-width: 768px) {
+  /* Sidebar becomes a drawer or hidden */
+  .sidebar {
+    width: 200px;
+    left: -200px;
+    transition: left 0.3s;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+    align-items: flex-start;
+    padding-left: 10px;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .sidebar-item {
+    width: 180px;
+    justify-content: flex-start;
+    padding-left: 20px;
+    height: 48px;
+    font-size: 16px;
+  }
+
+  .main-wrapper {
+    margin-left: 0 !important;
+  }
+}
+
+.categoryBox {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(29, 65, 136, 0.9) 0%,
+    rgba(102, 219, 255, 0.9) 100%
+  );
+  overflow-y: scroll;
+  display: none;
+  padding-bottom: 24px;
+}
+.categoryBox .closeIcon {
+  margin-top: 16px;
+  display: flex;
+  justify-content: end;
+}
+.categoryBox .closeIcon img {
+  width: 25px;
+  height: 25px;
+}
+.categoryBox .box .catB > nav {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.categoryBox .box .catB > nav > a {
+  width: 100%;
+  color: #fff;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+}
+.categoryBox .box .homeImg {
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border-radius: 6px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.categoryBox .box .homeImg::before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  border: 1px solid #80aff8;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+.categoryBox .box .homeImg img {
+  width: 15px;
+  height: 15px;
+}
+.categoryBox .catB .cateList {
+  margin-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+}
+.categoryBox .catB .cateList li {
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.categoryBox .catB .cateList li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  color: #fff;
+  will-change: width;
+}
+/* 创建底部方形填充动画的伪元素 */
+.cateList li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px; /* 方形条高度 */
+  width: 0;
+  background: #0362f1;
+  transition: width 3s ease;
+}
+
+/* 点击时添加.active 类触发动画 */
+.cateList li a.active::after {
+  width: 100%;
+}
+
+.categoryBox02,
+.categoryBox03 {
+  z-index: 99;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 60px);
+  background: rgba(255, 255, 255, 0.9);
+  overflow-y: scroll;
+  display: none;
+}
+.categoryBox02 h2 {
+  height: 20px;
+  font-size: 16px;
+  font-family: Fredoka-Medium;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.categoryBox02 .catB .cateList > li {
+  margin-top: 10px;
+  width: 100%;
+}
+.categoryBox02 .catB .cateList > li > a {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  background: #3d7eff;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+.categoryBox03 .main h2 {
+  text-align: center;
+  font-size: 28px;
+  margin: 12px 0 10px 0;
+  color: #333;
+}
+.categoryBox03 .main .cateList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.categoryBox03 .main .cateList > li {
+  width: 100%;
+  margin-top: 10px;
+}
+.categoryBox03 .main .cateList > li > a {
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  height: 50px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #ff313f;
+  font-size: 16px;
+}

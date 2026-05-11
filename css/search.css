@@ -1,0 +1,324 @@
+/* 顶部搜索框 */
+.searchBox {
+  z-index: 2000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background: var(--search-popup-bg);
+  display: none;
+  box-sizing: border-box;
+}
+
+.searchBox .main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.searchBox .main .closeIconSearch {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.searchBox .main .closeIconSearch i {
+  font-size: 24px;
+  color: var(--search-popup-text);
+  cursor: pointer;
+}
+
+.searchBox .main h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 10px;
+  color: var(--search-popup-text);
+  font-weight: bold;
+}
+
+.searchBox .main .searchMain {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  margin: 20px 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+}
+
+.searchBox .main .searchMain input {
+  flex: 1;
+  height: 100%;
+  outline: none;
+  background: transparent;
+  border: none;
+  color: var(--search-popup-text);
+  font-size: 16px;
+  padding: 0 40px 0 10px;
+}
+
+.searchBox .main .searchMain input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.searchBox .main .searchMain button {
+  position: absolute;
+  right: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBox .main .searchMain button i {
+  color: var(--search-popup-text) !important;
+  opacity: 0.8;
+}
+
+.searchBox .main h3 {
+  margin-top: 30px;
+  font-size: 20px;
+  color: var(--search-popup-text);
+  font-weight: bold;
+}
+
+.searchBox .main .games_list,
+.searchBox02 .comMain .games_list {
+  margin-top: 16px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-gap: 10px 10px;
+  grid-template-columns: repeat(2, calc((100% - 10px) / 2));
+  width: 100%;
+}
+
+.searchBox .main .games_list li a,
+.searchBox02 .comMain .games_list li a {
+  display: block;
+  width: 100%;
+  transition: all 0.3s;
+  position: relative;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.searchBox .main .games_list li a .thumb,
+.searchBox02 .comMain .games_list li a .thumb {
+  width: 100%;
+  height: 0;
+  padding-bottom: 45%;
+  position: relative;
+}
+
+.searchBox .main .games_list .thumb img,
+.searchBox02 .comMain .games_list .thumb img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+}
+
+.searchBox .main .games_list .thumb .new,
+.searchBox02 .comMain .games_list .thumb .new {
+  width: 46px;
+  height: 20px;
+  background: #3d7eff;
+  border-radius: 10px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  left: calc(50% - 23px);
+  bottom: -10px;
+}
+
+.searchBox .main .games_list li a > p,
+.searchBox02 .comMain .games_list li a > p {
+  padding: 15px 10px 10px 10px;
+}
+
+.searchBox02 {
+  z-index: 99;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 60px);
+  background: rgba(255, 255, 255, 0.9);
+  overflow: auto;
+  display: none;
+}
+.searchBox03 {
+  z-index: 99;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 60px);
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.searchBox02 .comMain {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.searchBox02 .searchMain {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+.searchBox02 .searchMain > input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  text-indent: 1em;
+  color: #999;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 20px;
+  font-size: 12px;
+  border: 1px solid #3d7eff;
+}
+.searchBox02 .searchMain button {
+  position: absolute;
+  border: none;
+  right: 0;
+  top: 1px;
+  width: 60px;
+  height: 38px;
+  background: #3d7eff;
+}
+.searchBox02 .comMain .searchMain button img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.searchBox03 .searchMain {
+  position: relative;
+  padding-bottom: 36px;
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  margin: 10px 0;
+}
+.searchBox03 .searchMain > input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  text-indent: 1em;
+  color: #999;
+  font-family: Baloo2-Regular;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 20px;
+  font-size: 12px;
+  border: 1px solid #ff313f;
+}
+.searchBox03 .comMain {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  background: #fff;
+}
+.searchBox03 .comMain > h2 {
+  color: #333;
+  font-size: 28px;
+  text-align: center;
+}
+.searchBox03 .searchMain button {
+  border: none;
+  width: 100%;
+  margin-top: 10px;
+  height: 38px;
+  background: #ff313f;
+  border-radius: 19px;
+  color: #fff;
+}
+.searchBox03 .searchMain button img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+/* ========== 添加 search_games_list 样式，与 .searchBox .main .games_list 保持一致 ========== */
+
+.search_games_list {
+  margin-top: 16px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-gap: 10px 10px;
+  grid-template-columns: repeat(2, calc((100% - 10px) / 2));
+  width: 100%;
+}
+
+.search_games_list li a {
+  display: block;
+  width: 100%;
+  transition: all 0.3s;
+  position: relative;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.search_games_list li a .thumb {
+  width: 100%;
+  height: 0;
+  padding-bottom: 45%;
+  position: relative;
+}
+
+.search_games_list .thumb img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+}
+
+.search_games_list .thumb .new {
+  width: 46px;
+  height: 20px;
+  background: #3d7eff;
+  border-radius: 10px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  left: calc(50% - 23px);
+  bottom: -10px;
+}
+
+.search_games_list li a > p {
+  padding: 15px 10px 10px 10px;
+}
+
+/* ========== 结束 search_games_list 样式 ========== */

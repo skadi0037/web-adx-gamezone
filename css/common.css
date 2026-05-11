@@ -1,0 +1,166 @@
+.main .games .nameBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1d4188;
+  padding: 7px 10px;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+.main .games .nameBox02 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  max-width: 480px;
+  margin: 0 auto;
+  height: 246px;
+  box-shadow: 6px 6px 12px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+}
+.main .games .nameBox02 img {
+  width: 100%;
+  height: 100%;
+}
+.main .nameBox .nameL {
+  width: calc(100% - 80px);
+  display: flex;
+  align-items: center;
+}
+
+.main .nameBox .nameL > img {
+  width: 46px;
+  height: 46px;
+  border-radius: 6px;
+  object-position: center;
+  object-fit: cover;
+  overflow: hidden;
+  margin-right: 12px;
+}
+.main .nameBox .nameL > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font-size: 16px;
+  color: #fff;
+  width: calc(100% - 58px);
+}
+.main .games .ad02 {
+  position: absolute;
+  bottom: 24px;
+  left: calc(50% - 130px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .games .ad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
+}
+.main .games .ad > span {
+  font-size: 12px;
+  text-align: center;
+  color: #999;
+}
+.main .playBox {
+  margin: 16px 0;
+  padding: 16px;
+  background: #1d4188;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+.main .playBox > h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.main .playBox .crumb {
+  display: flex;
+  align-items: center;
+  color: #95bfff;
+}
+.main .playBox .crumb > a,
+.main .playBox .crumb > a > span {
+  margin-right: 2px;
+  color: #95bfff;
+}
+.main .playBox .module {
+  margin-bottom: 20px;
+}
+.main .playBox .module h2 {
+  margin: 10px 0;
+}
+.main .playBox .module > p {
+  line-height: 21px;
+  font-family: Montserrat-Regular;
+  color: #95bfff;
+}
+
+.main .games .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  position: relative;
+}
+.main .games .title::before {
+  left: 0;
+}
+.main .games .title > h2 {
+  font-size: 20px;
+  font-family: Montserrat-Bold;
+}
+.main .games .title::after {
+  right: 0;
+}
+.main .games .title::before,
+.main .games .title::after {
+  content: "";
+  position: absolute;
+  width: calc((100% - 224px) / 2);
+  height: 1px;
+  background: #fff;
+}
+
+.main .games .games_list {
+  display: flex;
+  flex-wrap: wrap; /* 自动换行 */
+  justify-content: space-between; /* 每行均匀分布 */
+  width: 100%;
+}
+.main .games_list li {
+  flex: 0 0 calc(33.333% - 10px); /* 每行3个，减掉间距 */
+  margin-bottom: 15px; /* 每行之间的间距 */
+  box-sizing: border-box;
+}
+.main .games .games_list > li > a {
+  display: block;
+  width: 100%;
+  transition: all 0.3s;
+  position: relative;
+}
+.main .games .games_list > li > a .thumb {
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56%;
+  position: relative;
+}
+.main .games .games_list > li > a .thumb > img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+}
+.main .h2.text-secondary {
+  color: var(--text-secondary);
+}

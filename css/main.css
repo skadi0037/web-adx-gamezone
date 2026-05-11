@@ -1,0 +1,406 @@
+/* 主体内容样式 */
+.main-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+[data-theme="dark"] .main-wrapper {
+  background-color: #0b0c15;
+}
+
+[data-theme="pink"] .main-wrapper {
+  background-color: #fdf2f8;
+}
+
+.content-area {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .content-area {
+    padding: 12px;
+  }
+}
+
+/* 广告位占位符 */
+.ad-placeholder-top {
+  width: 100%;
+  max-width: 1352px; /* 1400 - 24*2 */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.ad-li {
+    grid-column: 1 / -1;
+    display: none; /* 默认隐藏 */
+    justify-content: center;
+    align-items: center;
+    background: #fdfdfd;
+    border: 1px dashed #e0e0e0;
+    border-radius: 12px;
+    min-height: 250px;
+    overflow: hidden;
+    margin: 10px 0;
+  }
+
+  /* 当广告成功加载或处于加载状态时显示 */
+  .ad-li.is-visible {
+    display: flex;
+  }
+
+  .ad-placeholder-top, .ad-placeholder-category {
+    display: none; /* 默认隐藏 */
+  }
+
+  .ad-placeholder-top.is-visible, .ad-placeholder-category.is-visible {
+    display: flex;
+  }
+
+[data-theme="dark"] .ad-li {
+  background: #1a1b28;
+  border-color: #333;
+}
+
+[data-theme="pink"] .ad-li {
+  background: #fdf2f8;
+  border-color: #fce7f3;
+}
+
+.ad-placeholder-list, .ad-placeholder-bottom, .ad-placeholder-category {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 强制广告标签填充容器宽度 */
+.adsbygoogle {
+  width: 100% !important;
+  min-width: 250px;
+}
+
+.ad-placeholder-category {
+  max-width: 1352px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+[data-theme="dark"] .ad-placeholder-category {
+  border-color: #333;
+}
+
+[data-theme="pink"] .ad-placeholder-category {
+  border-color: #fce7f3;
+}
+
+[data-theme="dark"] .ad-placeholder-top {
+  border-color: #333;
+}
+
+[data-theme="pink"] .ad-placeholder-top {
+  border-color: #fce7f3;
+}
+
+/* AdBlock 检测到后隐藏所有广告占位符 */
+[data-adblock] .ad-placeholder-top,
+[data-adblock] .ad-placeholder-bottom,
+[data-adblock] .ad-placeholder-category,
+[data-adblock] .ad-placeholder-list,
+[data-adblock] .ad-placeholder-category-wrapper {
+  display: none !important;
+}
+
+.ad-content {
+  color: #666;
+}
+
+[data-theme="dark"] .ad-content {
+  color: #a0a0a0;
+}
+
+[data-theme="pink"] .ad-content {
+  color: #ec4899;
+}
+
+.ad-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #1a1b28;
+}
+
+[data-theme="dark"] .ad-title {
+  color: #ffffff;
+}
+
+[data-theme="pink"] .ad-title {
+  color: #DB2777;
+}
+
+.ad-subtitle {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.ad-id {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* 游戏板块 */
+.games-section {
+  margin-bottom: 48px;
+  width: 100%;
+}
+
+.section-header {
+  margin-bottom: 24px;
+}
+
+.section-header h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #1a1b28;
+  margin: 0;
+}
+
+[data-theme="dark"] .section-header h2 {
+  color: #ffffff;
+}
+
+[data-theme="pink"] .section-header h2 {
+  color: #DB2777;
+}
+
+/* More 按钮样式 */
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.btn-more {
+  padding: 10px 24px;
+  background: var(--search-bg);
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  color: var(--nav-active);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn-more:hover {
+  background: #e2e8f0;
+  border-color: #cbd5e1;
+}
+
+[data-theme="dark"] .btn-more {
+  background: var(--search-bg);
+  border-color: #334155;
+  color: var(--nav-active);
+}
+
+[data-theme="dark"] .btn-more:hover {
+  background: #334155;
+}
+
+/* 首页分类列表限制一行 */
+.games_list {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+  margin-bottom: 32px;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 1200px) {
+  .games_list {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .games_list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .games_list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+/* 首页分类列表限制一行 */
+.games-section .games_list {
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+@media (min-width: 1201px) {
+  .games-section .games_list li:nth-child(n+9) { display: none; }
+}
+
+@media (max-width: 1200px) and (min-width: 993px) {
+  .games-section .games_list li:nth-child(n+7) { display: none; }
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+  .games-section .games_list li:nth-child(n+5) { display: none; }
+}
+
+@media (max-width: 768px) {
+  .games-section .games_list li:nth-child(n+9) { display: none; }
+  
+  .section-header {
+    margin-bottom: 16px;
+  }
+  
+  .section-header h2 {
+    font-size: 20px;
+  }
+  
+  .load-more-container {
+    margin-top: 16px;
+  }
+  
+  .btn-more {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+}
+
+.games_list li {
+  width: 100%;
+}
+
+.game-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* 让卡片高度一致 */
+}
+
+[data-theme="dark"] .game-card {
+  background: #1a1b28;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.game-thumb {
+  width: 100%;
+  position: relative;
+  padding-bottom: 100%; /* 1:1 Aspect Ratio */
+  overflow: hidden;
+}
+
+.game-thumb img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.game-info {
+  padding: 12px 8px;
+  text-align: center;
+  flex-grow: 1; /* 占据剩余空间 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px; /* 保证高度一致 */
+}
+
+.game-info span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1b28;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 最多显示两行 */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+}
+
+[data-theme="dark"] .game-info span {
+  color: #ffffff;
+}
+
+/* 加载更多按钮 */
+.load-more-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-load-more {
+  padding: 12px 32px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  color: #0362f1;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-load-more:hover {
+  background: #eef4fe;
+  border-color: #0362f1;
+}
+
+[data-theme="dark"] .btn-load-more {
+  background: #1a1b28;
+  border-color: #333;
+  color: #7a42f4;
+}
+
+[data-theme="dark"] .btn-load-more:hover {
+  background: rgba(122, 66, 244, 0.1);
+  border-color: #7a42f4;
+}
+
+/* 响应式适配 */
+@media (max-width: 768px) {
+  .content-area {
+    padding: 16px;
+  }
+
+  .game-info {
+    padding: 8px;
+  }
+
+  .game-info span {
+    font-size: 12px;
+  }
+}

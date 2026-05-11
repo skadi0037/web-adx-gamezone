@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Game - Detail</title>
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/sidebar.css">
+  <link rel="stylesheet" href="./css/search.css">
+  <link rel="stylesheet" href="./css/showLoading.css">
+  <link rel="stylesheet" href="./css/detail.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="icon" href="./images/favicon.png">
+  <style>
+    ins.adsbygoogle[data-ad-status="unfilled"] {
+      display: none !important;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./js/google/ad-manager.js"></script>
+</head>
+
+<body>
+  <div class="app-container">
+    <div class="main-wrapper">
+      <header class="top-bar">
+        <div class="header-content">
+          <div class="header-left">
+            <a href="./index.html" class="logo">
+              <div class="logo-icon"></div>
+              <span class="logo-text">Free Game</span>
+            </a>
+          </div>
+          <div class="nav-container">
+            <div class="nav-arrow left-arrow"><i class="fas fa-chevron-left"></i></div>
+            <nav class="main-nav">
+              <a href="./index.html" class="nav-item">Home</a>
+            </nav>
+            <div class="nav-arrow right-arrow"><i class="fas fa-chevron-right"></i></div>
+          </div>
+          <div class="header-right">
+            <div class="search-container">
+              <i class="fas fa-search search-icon"></i>
+              <input type="text" id="searchInput" class="search-input" placeholder="Search game">
+              <button id="searchBtn" style="display:none;"></button>
+            </div>
+            <div class="theme-select-wrapper">
+              <div class="theme-select-trigger">Dark</div>
+              <div class="theme-options">
+                <div class="theme-option" data-value="light">Light</div>
+                <div class="theme-option" data-value="dark">Dark</div>
+                <div class="theme-option" data-value="pink">Pink</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-category-nav">
+          <a href="./index.html" class="mobile-nav-item">Home</a>
+        </div>
+      </header>
+
+      <div class="content-area">
+        <!-- Top Ad Placeholder -->
+        <div class="ad-placeholder-top">
+          <!-- 动态加载广告 -->
+        </div>
+
+        <div class="detail-container">
+          <!-- Breadcrumbs -->
+          <nav class="breadcrumbs">
+            <a href="./index.html">Games</a> &gt;
+            <a href="#" id="breadcrumbCategory">Category</a> &gt;
+            <span id="breadcrumbGame">Game Name</span>
+          </nav>
+
+          <!-- Game Main Card -->
+          <div class="game-main-card">
+            <div class="game-header">
+              <div class="game-icon-wrapper">
+                <img src="./images/page.png" alt="Game Icon" id="gameIcon" referrerpolicy="no-referrer">
+              </div>
+              <div class="game-header-info">
+                <h1 id="gameTitle">Game Name</h1>
+                <p id="gameTagline">Confirm your game and continue to the loading page.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Start Playing Button -->
+          <div class="play-btn-container">
+            <button id="startPlayingBtn" class="btn-start-playing">Start Playing</button>
+          </div>
+          <!-- Bottom Ad Placeholder -->
+          <div class="ad-placeholder-bottom">
+            <!-- 动态加载广告 -->
+          </div>
+          <!-- About This Game Section -->
+          <div class="detail-section">
+            <h2 class="section-title">About This Game</h2>
+            <div class="game-description" id="gameDescription">
+              Game description goes here...
+            </div>
+            <a href="javascript:;" class="show-more-link" id="showMoreDesc">Show Full Description</a>
+          </div>
+
+          <!-- More Games Section -->
+          <div class="more-games-section">
+            <div class="section-header">
+              <h2 class="section-title">More Games</h2>
+            </div>
+            <ul class="games_list" id="moreGamesList">
+              <!-- Dynamic content will be loaded here -->
+            </ul>
+            <div class="load-more-container" style="margin-top: 30px; text-align: center;">
+              <button id="loadMoreGamesBtn" class="btn-load-more">More Games</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-links">
+          <a href="./agreement/users.html">Terms of Service</a>
+          <a href="./agreement/privacy.html">Privacy Policy</a>
+        </div>
+        <p>&copy; 2026 Free Game. All rights reserved.</p>
+      </footer>
+    </div>
+  </div>
+
+  <div class="top_lea">
+    <img src="./images/goTop.png" alt="Go Top" />
+  </div>
+
+  <div class="searchBox">
+    <div class="main">
+      <div class="closeIconSearch">
+        <i class="fas fa-times" style="font-size: 24px; color: #fff; cursor: pointer;"></i>
+      </div>
+      <h2>Search</h2>
+      <div class="searchMain">
+        <input type="text" id="mobileSearchInput" placeholder="Search">
+        <button id="mobileSearchBtn">
+          <i class="fas fa-search" style="color: rgba(255,255,255,0.6);"></i>
+        </button>
+      </div>
+      <div id="searchPage">
+        <h3>Hot</h3>
+        <ul class="games_list">
+          <!-- 动态加载游戏列表 -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="loadingMask">
+    <div class="loading-content">
+      <div class="spinner"></div>
+      <p>Loading...</p>
+    </div>
+  </div>
+
+  <script src="./js/switchBg.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/details.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZDPXP0C33"></script>
+  <script src="./js/google/ga.js"></script>
+  <script src="./js/google/openscreen.js"></script>
+</body>
+
+</html>
