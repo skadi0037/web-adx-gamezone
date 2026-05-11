@@ -61,11 +61,15 @@
     display: flex;
   }
 
-  .ad-placeholder-top, .ad-placeholder-category {
+  .ad-placeholder-top,
+  .ad-placeholder-bottom,
+  .ad-placeholder-category {
     display: none; /* 默认隐藏 */
   }
 
-  .ad-placeholder-top.is-visible, .ad-placeholder-category.is-visible {
+  .ad-placeholder-top.is-visible,
+  .ad-placeholder-bottom.is-visible,
+  .ad-placeholder-category.is-visible {
     display: flex;
   }
 
@@ -81,7 +85,6 @@
 
 .ad-placeholder-list, .ad-placeholder-bottom, .ad-placeholder-category {
   width: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 350px;
