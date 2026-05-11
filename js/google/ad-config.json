@@ -11,20 +11,20 @@
     "index.html": [
       {
         "adUnit": "/23342675536/home-top-banner",
-        "sizes": [[728, 90], [300, 250], [336, 280]],
+        "sizes": [[728, 250], [300, 250], [336, 280]],
         "selector": ".ad-placeholder-top",
         "enabled": 1
       },
       {
         "adUnit": "/23342675536/home-category-inline",
-        "sizes": [[728, 90], [300, 250], [336, 280]],
+        "sizes": [[728, 250], [300, 250], [336, 280]],
         "selector": ".ad-placeholder-category",
         "categoryPosition": 0,
         "enabled": 1
       },
       {
         "adUnit": "/23342675536/home-list-inline",
-        "sizes": [[728, 90], [300, 250], [336, 280]],
+        "sizes": [[728, 250], [300, 250], [336, 280]],
         "selector": ".ad-placeholder-list",
         "listPosition": 0,
         "enabled": 1
@@ -33,13 +33,13 @@
     "play.html": [
       {
         "adUnit": "/23342675536/play-top-banner",
-        "sizes": [[728, 90], [300, 250], [336, 280]],
+        "sizes": [[728, 250], [300, 250], [336, 280]],
         "selector": ".ad-placeholder-top",
         "enabled": 1
       },
       {
         "adUnit": "/23342675536/play-bottom-banner",
-        "sizes": [[728, 90], [300, 250], [336, 280]],
+        "sizes": [[728, 250], [300, 250], [336, 280]],
         "selector": ".ad-placeholder-bottom",
         "enabled": 1
       }
@@ -47,13 +47,13 @@
     "games.html": [
       {
         "adUnit": "/23342675536/detail-top-banner",
-        "sizes": [[728, 90], [300, 250], [336, 280]],
+        "sizes": [[728, 250], [300, 250], [336, 280]],
         "selector": ".ad-placeholder-top",
         "enabled": 1
       },
       {
         "adUnit": "/23342675536/detail-bottom-banner",
-        "sizes": [[728, 90], [300, 250], [336, 280]],
+        "sizes": [[728, 250], [300, 250], [336, 280]],
         "selector": ".ad-placeholder-bottom",
         "enabled": 1
       }
@@ -61,7 +61,7 @@
     "types.html": [
       {
         "adUnit": "/23342675536/list-top-banner",
-        "sizes": [[728, 90], [300, 250], [336, 280]],
+        "sizes": [[728, 250], [300, 250], [336, 280]],
         "selector": ".ad-placeholder-top",
         "enabled": 1
       },
