@@ -128,33 +128,6 @@ $(document).on("click", "a[utmMedium]", function (e) {
   const originalText = $btn.text();
   // $btn.text("Loading...").prop("disabled", true);
 });
-function getAdStyle(tag) {
-  return (
-    '<div class="adbox" style="height: 250px !important;display: flex;justify-content: center;align-items: center;display:none;">' +
-    tag +
-    "</div>"
-  );
-}
-
-// 生成广告
-//(首页2号位)
-// 首页广告 2号位
-function home2() {
-  const adId = "div-gpt-ad-1759047540554-0";
-  const adHtml = getAdStyle(
-    `<div id='${adId}' style='min-width: 300px; min-height: 250px;'></div>`,
-  );
-  return { adHtml, adId };
-}
-
-// 分类页广告 2号位
-function classification2() {
-  const adId = "div-gpt-ad-1759047723930-0";
-  const adHtml = getAdStyle(
-    `<div id='${adId}' style='min-width: 300px; min-height: 250px;'></div>`,
-  );
-  return { adHtml, adId };
-}
 // 获取当前屏幕下的列数
 function getColumnCount() {
   const width = $(window).width();

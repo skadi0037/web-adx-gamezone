@@ -85,11 +85,6 @@
   align-items: center;
 }
 
-/* 强制广告标签填充容器宽度 */
-.adsbygoogle {
-  width: 100% !important;
-  min-width: 250px;
-}
 
 .ad-placeholder-category {
   max-width: 1352px;

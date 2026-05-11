@@ -1,33 +1,42 @@
 {
   "global": {
-    "adClient": "ca-pub-1363403649940652",
-    "adTest": "on",
+    "networkCode": "23332244437",
     "adEnabled": 1
+  },
+  "interstitial": {
+    "enabled": 1,
+    "adUnit": "/23332244437/musikharmoni.my.id-OpenScreen"
   },
   "pages": {
     "index.html": [
       {
-        "slot": "8423089577",
-        "style": "display:block;height:350px",
-        "format": "auto",
-        "responsive": "true",
+        "adUnit": "/23332244437/home-top-banner",
+        "sizes": [[728, 350], [320, 50]],
+        "sizeMapping": [
+          { "viewport": [768, 0], "sizes": [[728, 350]] },
+          { "viewport": [0, 0], "sizes": [[320, 50]] }
+        ],
         "selector": ".ad-placeholder-top",
         "enabled": 1
       },
       {
-        "slot": "8423089577",
-        "style": "display:block;margin: 20px 0;",
-        "format": "auto",
-        "responsive": "true",
+        "adUnit": "/23332244437/home-category-inline",
+        "sizes": [[728, 350], [300, 250]],
+        "sizeMapping": [
+          { "viewport": [768, 0], "sizes": [[728, 350]] },
+          { "viewport": [0, 0], "sizes": [[300, 250]] }
+        ],
         "selector": ".ad-placeholder-category",
         "categoryPosition": 0,
         "enabled": 1
       },
       {
-        "slot": "8423089577",
-        "style": "display:block;",
-        "format": "auto",
-        "responsive": "true",
+        "adUnit": "/23332244437/home-list-inline",
+        "sizes": [[728, 350], [300, 250]],
+        "sizeMapping": [
+          { "viewport": [768, 0], "sizes": [[728, 350]] },
+          { "viewport": [0, 0], "sizes": [[300, 250]] }
+        ],
         "selector": ".ad-placeholder-list",
         "listPosition": 0,
         "enabled": 1
@@ -35,54 +44,66 @@
     ],
     "play.html": [
       {
-        "slot": "8790098117",
-        "style": "display:block;height:350px",
-        "format": "auto",
-        "responsive": "true",
+        "adUnit": "/23332244437/play-top-banner",
+        "sizes": [[728, 350], [320, 50]],
+        "sizeMapping": [
+          { "viewport": [768, 0], "sizes": [[728, 350]] },
+          { "viewport": [0, 0], "sizes": [[320, 50]] }
+        ],
         "selector": ".ad-placeholder-top",
         "enabled": 1
       },
       {
-        "slot": "8790098117",
-        "style": "display:block;height:350px",
-        "format": "auto",
-        "responsive": "true",
+        "adUnit": "/23332244437/play-bottom-banner",
+        "sizes": [[728, 350], [300, 250]],
+        "sizeMapping": [
+          { "viewport": [768, 0], "sizes": [[728, 350]] },
+          { "viewport": [0, 0], "sizes": [[300, 250]] }
+        ],
         "selector": ".ad-placeholder-bottom",
         "enabled": 1
       }
     ],
     "games.html": [
       {
-        "slot": "4571474475",
-        "style": "display:block;height:350px",
-        "format": "auto",
-        "responsive": "true",
+        "adUnit": "/23332244437/detail-top-banner",
+        "sizes": [[728, 350], [320, 50]],
+        "sizeMapping": [
+          { "viewport": [768, 0], "sizes": [[728, 350]] },
+          { "viewport": [0, 0], "sizes": [[320, 50]] }
+        ],
         "selector": ".ad-placeholder-top",
         "enabled": 1
       },
       {
-        "slot": "4571474475",
-        "style": "display:block;height:350px",
-        "format": "auto",
-        "responsive": "true",
+        "adUnit": "/23332244437/detail-bottom-banner",
+        "sizes": [[728, 350], [300, 250]],
+        "sizeMapping": [
+          { "viewport": [768, 0], "sizes": [[728, 350]] },
+          { "viewport": [0, 0], "sizes": [[300, 250]] }
+        ],
         "selector": ".ad-placeholder-bottom",
         "enabled": 1
       }
     ],
     "types.html": [
       {
-        "slot": "4571474475",
-        "style": "display:block;height:350px",
-        "format": "auto",
-        "responsive": "true",
+        "adUnit": "/23332244437/list-top-banner",
+        "sizes": [[728, 350], [320, 50]],
+        "sizeMapping": [
+          { "viewport": [768, 0], "sizes": [[728, 350]] },
+          { "viewport": [0, 0], "sizes": [[320, 50]] }
+        ],
         "selector": ".ad-placeholder-top",
         "enabled": 1
       },
       {
-        "slot": "4571474475",
-        "style": "display:block;",
-        "format": "auto",
-        "responsive": "true",
+        "adUnit": "/23332244437/list-inline",
+        "sizes": [[300, 350], [336, 280]],
+        "sizeMapping": [
+          { "viewport": [768, 0], "sizes": [[336, 350]] },
+          { "viewport": [0, 0], "sizes": [[300, 350]] }
+        ],
         "selector": ".ad-placeholder-list",
         "listPosition": 0,
         "enabled": 1
