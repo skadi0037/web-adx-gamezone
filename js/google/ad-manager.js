@@ -59,7 +59,7 @@
       this.gptLoaded = true;
 
       googletag.cmd.push(function () {
-        googletag.setConfig({ singleRequest: true, collapseDiv: 'ON_NO_FILL' });
+        googletag.setConfig({ singleRequest: false, collapseDiv: 'ON_NO_FILL' });
         googletag.enableServices();
 
         // 注册插屏广告
@@ -168,7 +168,7 @@
             }
           }
         },
-        { threshold: 0.1 }
+        { threshold: 0.1, rootMargin: "200px" }
       );
 
       observer.observe($container[0]);
@@ -195,6 +195,7 @@
 
         AdManager.renderedSlots[slotId] = { $container: $container };
         googletag.display(slotId);
+        googletag.pubads().refresh([slot]);
       });
     },
 
@@ -222,6 +223,9 @@
     },
 
     hideEmptyPlaceholders: function () {
+      // 只有在确定被拦截时才执行隐藏逻辑
+      if (document.documentElement.getAttribute("data-adblock") !== "true") return;
+
       var selectors = [
         ".ad-placeholder-top",
         ".ad-placeholder-bottom",
