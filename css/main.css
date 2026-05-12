@@ -266,21 +266,7 @@
   overflow: hidden;
 }
 
-@media (min-width: 1201px) {
-  .games-section .games_list li:nth-child(n+9) { display: none; }
-}
-
-@media (max-width: 1200px) and (min-width: 993px) {
-  .games-section .games_list li:nth-child(n+7) { display: none; }
-}
-
-@media (max-width: 992px) and (min-width: 769px) {
-  .games-section .games_list li:nth-child(n+5) { display: none; }
-}
-
 @media (max-width: 768px) {
-  .games-section .games_list li:nth-child(n+9) { display: none; }
-  
   .section-header {
     margin-bottom: 16px;
   }

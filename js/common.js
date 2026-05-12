@@ -1,6 +1,6 @@
 // 请求基础地址
-// const baseUrl = "https://seevee.vip";
-const baseUrl = window.location.origin;
+const baseUrl = "https://seevee.vip";
+// const baseUrl = window.location.origin;
 
 //清空内存数据
 function ClearMemoryData() {
@@ -185,8 +185,7 @@ function appendGameItem(
 
         if (index === targetIndex) {
           container.append(`
-                    <li class="ad-li">
-                        <div class="${ad.selector.replace(".", "")}"></div>
+                    <li class="ad-li ${ad.selector.replace(".", "")}">
                     </li>
                 `);
         }
