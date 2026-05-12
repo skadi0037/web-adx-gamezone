@@ -1,6 +1,6 @@
 // 请求基础地址
-const baseUrl = "https://seevee.vip";
-// const baseUrl = window.location.origin;
+// const baseUrl = "https://seevee.vip";
+const baseUrl = window.location.origin;
 
 //清空内存数据
 function ClearMemoryData() {
