@@ -153,7 +153,7 @@
       $container.attr("data-ad-status", "pending");
 
       var slotId = "gpt-ad-" + this.slotCounter++;
-      var $adDiv = $('<div id="' + slotId + '"></div>');
+      var $adDiv = $('<div id="' + slotId + '" style="display: flex; justify-content: center; width: 100%;"></div>');
       $container.empty().append($adDiv);
 
       $container.addClass("is-visible");

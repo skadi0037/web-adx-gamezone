@@ -85,6 +85,7 @@
 
 .ad-placeholder-list, .ad-placeholder-bottom, .ad-placeholder-category {
   width: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 350px;
