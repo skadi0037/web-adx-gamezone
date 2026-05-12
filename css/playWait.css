@@ -138,6 +138,14 @@
   padding: 30px;
   text-align: center;
   box-sizing: border-box;
+  min-height: 350px;
+}
+
+@media (max-width: 768px) {
+  .ad-placeholder-bottom {
+    padding: 10px;
+    min-height: 350px;
+  }
 }
 
 [data-theme="dark"] .ad-placeholder-bottom {

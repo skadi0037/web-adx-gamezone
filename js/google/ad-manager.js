@@ -3,6 +3,7 @@
  * 使用 Google Publisher Tag (GPT) 动态加载展示广告 & 插屏广告
  */
 (function () {
+  if (window.AdManager) return;
   window.googletag = window.googletag || { cmd: [] };
 
   const AdManager = {
@@ -19,8 +20,13 @@
 
     slotCounter: 0,
     renderedSlots: {},
+    initialized: false,
+    gptLoaded: false,
 
     init: async function () {
+      if (this.initialized) return;
+      this.initialized = true;
+
       try {
         var response = await fetch(
           this.configUrl + "?v=" + new Date().getTime()
@@ -46,14 +52,17 @@
     },
 
     loadGPT: function () {
-      if (document.querySelector('script[src*="securepubads.g.doubleclick.net"]')) {
+      if (this.gptLoaded || document.querySelector('script[src*="securepubads.g.doubleclick.net"]')) {
+        this.gptLoaded = true;
         return;
       }
+      this.gptLoaded = true;
 
       googletag.cmd.push(function () {
         googletag.setConfig({ singleRequest: true, collapseDiv: 'ON_NO_FILL' });
         googletag.enableServices();
 
+        // 注册插屏广告
         if (
           window.AD_CONFIG.interstitial &&
           window.AD_CONFIG.interstitial.enabled !== 0
@@ -65,6 +74,21 @@
           if (slot) {
             slot.addService(googletag.pubads());
             googletag.display(slot);
+          }
+        }
+
+        // 注册锚点广告 (Top/Bottom Anchor)
+        if (
+          window.AD_CONFIG.anchor &&
+          window.AD_CONFIG.anchor.enabled !== 0
+        ) {
+          var anchorSlot = googletag.defineOutOfPageSlot(
+            window.AD_CONFIG.anchor.adUnit,
+            googletag.enums.OutOfPageFormat.TOP_ANCHOR // 或 BOTTOM_ANCHOR
+          );
+          if (anchorSlot) {
+            anchorSlot.addService(googletag.pubads());
+            googletag.display(anchorSlot);
           }
         }
       });

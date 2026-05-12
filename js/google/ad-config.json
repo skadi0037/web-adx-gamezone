@@ -16,6 +16,11 @@
           [300, 250],
           [336, 280]
         ],
+        "sizeMapping": [
+          { "viewport": [1024, 0], "sizes": [[728, 250], [300, 250], [336, 280]] },
+          { "viewport": [768, 0], "sizes": [[728, 250], [300, 250], [336, 280]] },
+          { "viewport": [0, 0], "sizes": [[300, 250], [336, 280]] }
+        ],
         "selector": ".ad-placeholder-top",
         "enabled": 1
       },
@@ -25,6 +30,11 @@
           [728, 250],
           [300, 250],
           [336, 280]
+        ],
+        "sizeMapping": [
+          { "viewport": [1024, 0], "sizes": [[728, 250], [300, 250], [336, 280]] },
+          { "viewport": [768, 0], "sizes": [[728, 250], [300, 250], [336, 280]] },
+          { "viewport": [0, 0], "sizes": [[300, 250], [336, 280]] }
         ],
         "selector": ".ad-placeholder-list",
         "listPosition": 0,
@@ -36,6 +46,11 @@
           [728, 250],
           [300, 250],
           [336, 280]
+        ],
+        "sizeMapping": [
+          { "viewport": [1024, 0], "sizes": [[728, 250], [300, 250], [336, 280]] },
+          { "viewport": [768, 0], "sizes": [[728, 250], [300, 250], [336, 280]] },
+          { "viewport": [0, 0], "sizes": [[300, 250], [336, 280]] }
         ],
         "selector": ".ad-placeholder-category",
         "categoryPosition": 0,
@@ -50,6 +65,11 @@
           [300, 250],
           [336, 280]
         ],
+        "sizeMapping": [
+          { "viewport": [1024, 0], "sizes": [[728, 250], [300, 250], [336, 280]] },
+          { "viewport": [768, 0], "sizes": [[728, 250], [300, 250], [336, 280]] },
+          { "viewport": [0, 0], "sizes": [[300, 250], [336, 280]] }
+        ],
         "selector": ".ad-placeholder-top",
         "enabled": 1
       },
@@ -58,6 +78,9 @@
         "sizes": [
           [300, 250],
           [336, 280]
+        ],
+        "sizeMapping": [
+          { "viewport": [0, 0], "sizes": [[300, 250], [336, 280]] }
         ],
         "selector": ".ad-placeholder-list",
         "listPosition": 0,
@@ -72,6 +95,11 @@
           [300, 250],
           [336, 280]
         ],
+        "sizeMapping": [
+          { "viewport": [1024, 0], "sizes": [[728, 250], [300, 250], [336, 280]] },
+          { "viewport": [768, 0], "sizes": [[728, 250], [300, 250], [336, 280]] },
+          { "viewport": [0, 0], "sizes": [[300, 250], [336, 280]] }
+        ],
         "selector": ".ad-placeholder-top",
         "enabled": 1
       },
@@ -81,6 +109,11 @@
           [728, 250],
           [300, 250],
           [336, 280]
+        ],
+        "sizeMapping": [
+          { "viewport": [1024, 0], "sizes": [[728, 250], [300, 250], [336, 280]] },
+          { "viewport": [768, 0], "sizes": [[728, 250], [300, 250], [336, 280]] },
+          { "viewport": [0, 0], "sizes": [[300, 250], [336, 280]] }
         ],
         "selector": ".ad-placeholder-bottom",
         "enabled": 1
@@ -94,6 +127,11 @@
           [300, 250],
           [336, 280]
         ],
+        "sizeMapping": [
+          { "viewport": [1024, 0], "sizes": [[728, 250], [300, 250], [336, 280]] },
+          { "viewport": [768, 0], "sizes": [[728, 250], [300, 250], [336, 280]] },
+          { "viewport": [0, 0], "sizes": [[300, 250], [336, 280]] }
+        ],
         "selector": ".ad-placeholder-top",
         "enabled": 1
       },
@@ -103,6 +141,11 @@
           [728, 250],
           [300, 250],
           [336, 280]
+        ],
+        "sizeMapping": [
+          { "viewport": [1024, 0], "sizes": [[728, 250], [300, 250], [336, 280]] },
+          { "viewport": [768, 0], "sizes": [[728, 250], [300, 250], [336, 280]] },
+          { "viewport": [0, 0], "sizes": [[300, 250], [336, 280]] }
         ],
         "selector": ".ad-placeholder-bottom",
         "enabled": 1

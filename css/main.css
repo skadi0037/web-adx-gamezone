@@ -90,6 +90,17 @@
   min-height: 350px;
 }
 
+@media (max-width: 768px) {
+  .ad-placeholder-top,
+  .ad-placeholder-bottom,
+  .ad-placeholder-category,
+  .ad-placeholder-list,
+  .ad-li {
+    min-height: 350px;
+    padding: 10px;
+  }
+}
+
 
 .ad-placeholder-category {
   max-width: 1352px;
