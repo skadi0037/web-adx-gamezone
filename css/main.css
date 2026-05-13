@@ -48,9 +48,6 @@
     display: none; /* 默认隐藏 */
     justify-content: center;
     align-items: center;
-    background: #fdfdfd;
-    border: 1px dashed #e0e0e0;
-    border-radius: 12px;
     min-height: 350px;
     overflow: hidden;
     margin: 10px 0;
@@ -74,12 +71,10 @@
   }
 
 [data-theme="dark"] .ad-li {
-  background: #1a1b28;
   border-color: #333;
 }
 
 [data-theme="pink"] .ad-li {
-  background: #fdf2f8;
   border-color: #fce7f3;
 }
 
