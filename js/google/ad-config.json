@@ -2,7 +2,8 @@
   "mode": "adx",
   "global": {
     "networkCode": "23291201718",
-    "adEnabled": 1
+    "adEnabled": 1,
+    "gaId": "G-9ZDPXP0C33"
   },
   "interstitial": {
     "enabled": 1,
