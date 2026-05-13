@@ -8,6 +8,11 @@
     "enabled": 1,
     "adUnit": "/23291201718/trendgame.life-initial"
   },
+  "anchor": {
+    "enabled": 1,
+    "adUnit": "/23291201718/trendgame.life-anchor",
+    "position": "bottom"
+  },
   "pages": {
     "index.html": [
       {

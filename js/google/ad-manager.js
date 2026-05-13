@@ -82,9 +82,13 @@
           window.AD_CONFIG.anchor &&
           window.AD_CONFIG.anchor.enabled !== 0
         ) {
+          var anchorFormat = window.AD_CONFIG.anchor.position === "top"
+            ? googletag.enums.OutOfPageFormat.TOP_ANCHOR
+            : googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR;
+
           var anchorSlot = googletag.defineOutOfPageSlot(
             window.AD_CONFIG.anchor.adUnit,
-            googletag.enums.OutOfPageFormat.TOP_ANCHOR // 或 BOTTOM_ANCHOR
+            anchorFormat
           );
           if (anchorSlot) {
             anchorSlot.addService(googletag.pubads());
