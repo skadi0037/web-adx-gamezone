@@ -20,7 +20,10 @@
       }
 
       const GA_ID = config.global.gaId;
-      if (!GA_ID) return;
+      if (!GA_ID || GA_ID.trim() === "" || GA_ID === "YOUR_GA_ID") {
+        console.log("GA_ID is not configured, skipping GA initialization.");
+        return;
+      }
 
       // 动态加载 gtag.js
       const script = document.createElement("script");
